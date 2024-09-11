@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Dapp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Donation Dapp</h1>
+    <button id="connectButton">Connect Wallet</button>
+    <p>Connected Wallet: <span id="walletAddress">Not connected</span></p>
+
+    <div>
+        <h2>Send ETH</h2>
+        <input type="text" id="amountETH" placeholder="Amount in ETH">
+        <button id="sendETH">Send ETH</button>
+    </div>
+
+    <div>
+        <h2>Send USDT</h2>
+        <input type="text" id="amountUSDT" placeholder="Amount in USDT">
+        <button id="sendUSDT">Send USDT</button>
+    </div>
+
+    <div>
+        <h2>Send USDC</h2>
+        <input type="text" id="amountUSDC" placeholder="Amount in USDC">
+        <button id="sendUSDC">Send USDC</button>
+    </div>
+
+    <p id="transactionStatus"></p>
+    <p id="status"></p>
+</body>
+</html>
